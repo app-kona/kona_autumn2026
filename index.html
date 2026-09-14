@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>秋の淡路島 1泊2日 周遊プラン｜KONA RESORT</title>
+<meta name="description" content="秋は、サウナと夕日がいちばん良い季節。昼はコスモスや紅葉、秋の味覚を巡り、夕暮れは淡路島西海岸の一棟貸しヴィラへ。KONA RESORT AWAJI KAI・KONA OCEAN CLUB・Dog Villa Holoholo の秋の1泊2日。">
+<meta name="robots" content="noindex"><!-- パスワード付き限定公開のため検索に出さない -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Shippori+Mincho:wght@500&family=Zen+Kaku+Gothic+New:wght@500;700&family=Noto+Sans+JP:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<!--
+  KONA RESORT 秋の1泊2日周遊プランLP  v1 初版（2026-09-14）
+  デザイン：KONA RESORT デザインシステム（マスター DESIGN.md）
+    - 3ブランド横断ページのため、親ブランド KONA RESORT の差し色＝夕陽ゴールド #C69A5B を1画面1回だけ使う
+    - 地は アイボリー #F7F4EE／白、濃い帯とフッターは 深海ネイビー #12376B
+  掲載前に確認が必要な箇所には data-verify 属性を付けている
+-->
+<style>
+:root{
+  --sea-mist:#DEE8DD; --seafoam:#C8DED2; --aqua:#A4CFC6; --turquoise:#75C0C3; --steel:#628FB0; --ocean:#016098;
+  --navy:#12376B; --navy-deep:#0C2A54;
+  --ink:#1A222B; --body:#28313A; --muted:#5D6A72; --on-dark:#F4F7FA; --on-dark-soft:rgba(244,247,250,.8);
+  --ivory:#F7F4EE; --white:#FFFFFF; --mist:#F4F8F7;
+  --line:#DDE6E4; --line-ivory:#E4DFD4; --line-dark:rgba(255,255,255,.22);
+  --gold:#C69A5B; --gold-lt:#D8AD6A;
+  --f-display:'Jost','Poppins','Zen Kaku Gothic New',sans-serif;
+  --f-jp:'Zen Kaku Gothic New','Noto Sans JP',sans-serif;
+  --f-mincho:'Shippori Mincho','Noto Serif JP',serif;
+  --f-body:Inter,'Noto Sans JP',sans-serif;
+  --ease:.4s ease;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--f-body);font-size:16px;line-height:1.9;letter-spacing:.02em;color:var(--body);background:var(--ivory);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--f-display);font-size:13px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--steel);line-height:1}
+.on-dark .eyebrow{color:var(--aqua)}
+.h2{font-family:var(--f-jp);font-weight:700;font-size:clamp(26px,3.6vw,36px);line-height:1.45;color:var(--ink);margin-top:18px}
+.on-dark .h2{color:var(--on-dark)}
+.lead{font-size:clamp(15px,1.6vw,18px);line-height:1.9;margin-top:20px;max-width:640px}
+.sec{padding:clamp(72px,10vw,120px) 0}
+.sec-white{background:var(--white)}
+.sec-ivory{background:var(--ivory)}
+.sec-navy{background:var(--navy);color:var(--on-dark-soft)}
+.note{font-size:12px;line-height:1.8;color:var(--muted);margin-top:16px}
+.on-dark .note{color:var(--on-dark-soft)}
+
+/* ボタン */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:15px 30px;border-radius:9999px;font-family:var(--f-display);font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;transition:background var(--ease),color var(--ease),border-color var(--ease)}
+.btn-gold{background:var(--gold);color:var(--navy);min-width:220px}
+.btn-gold:hover{background:var(--gold-lt)}
+.btn-line-light{border:1px solid #fff;color:#fff}
+.btn-line-light:hover{background:rgba(255,255,255,.14)}
+.btn-line-ink{border:1px solid var(--ink);color:var(--ink)}
+.btn-line-ink:hover{background:var(--ink);color:#fff}
+.btn .jp{font-family:var(--f-jp);letter-spacing:.08em;text-transform:none;font-size:14px}
+
+/* ヘッダー */
+.nav{position:fixed;inset:0 0 auto 0;height:72px;z-index:50;display:flex;align-items:center;transition:background var(--ease)}
+.nav .wrap{width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-logo img{height:34px;width:auto}
+.nav-logo .dark{display:none}
+.nav.scrolled{background:rgba(18,55,107,.94)}
+.nav a.btn{min-height:40px;padding:10px 22px}
+
+/* ヒーロー */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--navy-deep)}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero .wrap{position:relative;width:100%;padding-bottom:clamp(56px,9vh,96px)}
+.hero .eyebrow{color:#fff;opacity:.9}
+.hero h1{font-family:var(--f-jp);font-weight:700;font-size:clamp(30px,5.2vw,60px);line-height:1.4;letter-spacing:.04em;margin-top:22px;text-shadow:0 1px 18px rgba(0,0,0,.25)}
+.hero .sub{font-size:clamp(14px,1.6vw,17px);margin-top:18px;max-width:560px;text-shadow:0 1px 12px rgba(0,0,0,.3)}
+.hero .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;align-items:center}
+.hero .period{font-family:var(--f-display);font-weight:300;letter-spacing:.12em;font-size:14px;opacity:.9}
+.hero .credit{position:absolute;right:16px;bottom:12px;font-size:11px;opacity:.7}
+
+/* 理由 */
+.reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:56px}
+.reason .num{font-family:var(--f-display);font-weight:300;font-size:44px;line-height:1;color:var(--turquoise);letter-spacing:.04em}
+.reason h3{font-family:var(--f-jp);font-weight:700;font-size:20px;color:var(--ink);margin-top:14px;line-height:1.5}
+.reason p{margin-top:10px;font-size:15px}
+
+/* 一日の流れ */
+.day{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px);align-items:center}
+.day-photo{position:relative}
+.day-photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.day-photo figcaption{font-size:11px;color:var(--on-dark-soft);margin-top:10px}
+.concept{font-family:var(--f-mincho);font-weight:500;font-size:clamp(24px,3vw,32px);line-height:1.7;letter-spacing:.06em;color:var(--on-dark);margin-top:18px}
+.timeline{list-style:none;margin-top:36px;border-left:1px solid var(--line-dark)}
+.timeline li{position:relative;padding:0 0 26px 28px}
+.timeline li::before{content:"";position:absolute;left:-4px;top:10px;width:7px;height:7px;border-radius:50%;background:var(--aqua)}
+.timeline .t{font-family:var(--f-display);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--aqua)}
+.timeline h3{font-family:var(--f-jp);font-weight:700;font-size:18px;color:var(--on-dark);line-height:1.5;margin-top:2px}
+.timeline p{font-size:14px;margin-top:4px}
+
+/* 見どころカレンダー */
+.cal-scroll{overflow-x:auto;margin-top:48px;-webkit-overflow-scrolling:touch}
+.cal{position:relative;min-width:760px;padding:34px 0 30px}
+.cal-months{position:absolute;inset:0 0 auto 230px;height:24px}
+.cal-months span{position:absolute;top:0;font-family:var(--f-display);font-size:13px;letter-spacing:.14em;color:var(--muted)}
+.cal-body{position:relative}
+.cal-row{display:grid;grid-template-columns:230px 1fr;align-items:center;min-height:44px;border-top:1px solid var(--line)}
+.cal-row:last-child{border-bottom:1px solid var(--line)}
+.cal-label{font-size:14px;color:var(--ink);line-height:1.5;padding-right:12px}
+.cal-label small{display:block;font-size:11px;color:var(--muted)}
+.cal-track{position:relative;height:44px}
+.bar{position:absolute;top:14px;height:16px;border-radius:9999px;background:var(--aqua)}
+.bar.b2{background:var(--turquoise)} .bar.b3{background:var(--steel)} .bar.b4{background:var(--navy)}
+.dot{position:absolute;top:12px;width:20px;height:20px;border-radius:50%;background:var(--navy);transform:translateX(-50%)}
+.cal-hol{position:absolute;top:0;bottom:0;background:rgba(222,232,221,.7);pointer-events:none}
+.cal-hol-wrap{position:absolute;top:0;bottom:0;left:230px;right:0}
+.cal-hol span{position:absolute;bottom:-24px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:11px;color:var(--ocean)}
+.cal-legend{display:flex;flex-wrap:wrap;gap:18px;margin-top:16px;font-size:12px;color:var(--muted)}
+.cal-legend i{display:inline-block;width:18px;height:12px;vertical-align:middle;margin-right:6px;background:rgba(222,232,221,1)}
+
+/* 周遊コース */
+.courses{display:grid;gap:28px;margin-top:56px}
+.course{background:var(--white);display:grid;grid-template-columns:280px 1fr;border:1px solid var(--line-ivory)}
+.course-head{background:var(--mist);padding:36px 32px;border-right:1px solid var(--line-ivory)}
+.course-head .when{font-family:var(--f-display);font-size:12px;letter-spacing:.2em;color:var(--steel);text-transform:uppercase}
+.course-head .name{font-family:var(--f-jp);font-weight:700;font-size:24px;color:var(--ink);line-height:1.45;margin-top:12px}
+.course-head .period{font-size:14px;color:var(--ink);margin-top:10px}
+.course-head .for{font-size:13px;color:var(--muted);margin-top:14px;line-height:1.8}
+.course-body{padding:32px 36px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.dayblock h4{font-family:var(--f-display);font-weight:500;font-size:13px;letter-spacing:.2em;color:var(--steel);text-transform:uppercase}
+.dayblock ol{list-style:none;margin-top:12px}
+.dayblock li{position:relative;padding:0 0 14px 22px;font-size:15px;line-height:1.7;color:var(--ink)}
+.dayblock li::before{content:"";position:absolute;left:2px;top:.62em;width:7px;height:7px;border-radius:50%;border:1px solid var(--steel)}
+.dayblock li.stay::before{background:var(--navy);border-color:var(--navy)}
+.dayblock li small{display:block;font-size:12px;color:var(--muted)}
+.course-body .foot{grid-column:1/-1;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;line-height:1.8}
+
+/* 秋の味覚 */
+.tastes{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-ivory);margin-top:56px;border:1px solid var(--line-ivory)}
+.taste{background:var(--ivory);padding:30px 24px}
+.taste .when{font-family:var(--f-display);font-size:12px;letter-spacing:.16em;color:var(--steel)}
+.taste h3{font-family:var(--f-jp);font-weight:700;font-size:19px;color:var(--ink);margin-top:10px;line-height:1.5}
+.taste p{font-size:14px;margin-top:8px;line-height:1.8}
+
+/* 施設 */
+.villas{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:56px}
+.villa img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.villa .brand{font-family:var(--f-display);font-weight:500;font-size:22px;letter-spacing:.06em;text-transform:uppercase;color:var(--on-dark);margin-top:22px;line-height:1.3}
+.villa .brand.light{font-weight:300;letter-spacing:.16em}
+.villa .jp{font-size:13px;color:var(--on-dark-soft);margin-top:4px}
+.villa .fit{font-family:var(--f-jp);font-weight:700;font-size:17px;color:var(--on-dark);margin-top:18px;line-height:1.6}
+.villa dl{margin-top:14px;font-size:14px;line-height:1.8}
+.villa dt{float:left;clear:left;width:5.5em;color:var(--aqua)}
+.villa dd{margin-left:5.5em}
+.villa .btn{margin-top:22px}
+
+/* よくある質問 */
+.faq{margin-top:48px;border-top:1px solid var(--line-ivory)}
+.faq details{border-bottom:1px solid var(--line-ivory)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;position:relative;font-family:var(--f-jp);font-weight:700;font-size:17px;color:var(--ink);line-height:1.6}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:8px;top:50%;width:10px;height:10px;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);transform:translateY(-70%) rotate(45deg);transition:transform var(--ease)}
+.faq details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+.faq .a{padding:0 0 24px;font-size:15px;max-width:820px}
+
+/* 締め */
+.final{position:relative;color:#fff;text-align:center;overflow:hidden;background:var(--navy-deep)}
+.final img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.final .wrap{position:relative;padding-top:clamp(96px,14vw,160px);padding-bottom:clamp(96px,14vw,160px)}
+.final .concept{color:#fff;margin-top:0}
+.final .actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:36px}
+
+footer{background:var(--navy);color:var(--on-dark-soft);font-size:13px;padding:64px 0 40px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;align-items:flex-start}
+footer img{height:40px;width:auto}
+footer ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px 28px}
+footer a{text-decoration:none;border-bottom:1px solid var(--line-dark)}
+footer a:hover{border-color:var(--aqua)}
+footer .copy{width:100%;font-size:11px;margin-top:20px}
+
+/* 出現（ふわっと） */
+.rise{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.rise.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rise{opacity:1;transform:none;transition:none}}
+
+@media (max-width:1024px){
+  .tastes{grid-template-columns:repeat(2,1fr)}
+  .villas{grid-template-columns:1fr 1fr}
+  .course{grid-template-columns:1fr}
+  .course-head{border-right:0;border-bottom:1px solid var(--line-ivory)}
+}
+@media (max-width:767px){
+  .reasons,.day,.villas,.tastes{grid-template-columns:1fr}
+  .reasons{gap:36px}
+  .course-body{grid-template-columns:1fr;padding:26px 22px}
+  .course-head{padding:28px 22px}
+  .day-photo img{aspect-ratio:4/3}
+  .nav-logo img{height:28px}
+  .hero .actions .btn{width:100%}
+  .cal{min-width:680px}
+  .cal-row{grid-template-columns:150px 1fr}
+  .cal-months,.cal-hol-wrap{left:150px}
+  .cal-label{font-size:13px}
+  .final .actions .btn{width:100%}
+}
+
+/* パスワード画面（クライアント側の簡易ゲート） */
+body.locked > :not(#gate){display:none!important}
+#gate{display:none}
+body.locked #gate{display:flex;position:fixed;inset:0;z-index:100;background:var(--navy);align-items:center;justify-content:center;padding:24px}
+.gate-box{width:100%;max-width:360px;text-align:center;color:var(--on-dark)}
+.gate-box img{height:40px;width:auto;margin:0 auto 28px}
+.gate-box p{font-size:14px;color:var(--on-dark-soft)}
+.gate-box input{width:100%;margin-top:20px;padding:14px 18px;border-radius:9999px;border:1px solid var(--line-dark);background:rgba(255,255,255,.08);color:#fff;font-size:18px;text-align:center;letter-spacing:.3em;outline:none}
+.gate-box input:focus{border-color:var(--aqua)}
+.gate-box button{margin-top:14px;width:100%;cursor:pointer;border:0}
+.gate-err{margin-top:12px;font-size:13px;color:var(--gold-lt)!important;visibility:hidden}
+</style>
+</head>
+<body class="locked">
+<div id="gate">
+  <form class="gate-box" id="gateForm" autocomplete="off">
+    <img src="images/logo-kona-resort-white.svg" alt="KONA RESORT">
+    <p>このページの閲覧にはパスワードが必要です</p>
+    <input type="password" id="gateInput" inputmode="numeric" autocomplete="new-password" placeholder="パスワード" aria-label="パスワード">
+    <button type="submit" class="btn btn-line-light"><span class="jp">表示する</span></button>
+    <p class="gate-err" id="gateErr">パスワードが違います</p>
+  </form>
+</div>
+<script>
+(function(){
+  var KEY='kona_autumn2026_unlocked';
+  var PASS='5757';
+
+  try{if(sessionStorage.getItem(KEY)==='1'){document.body.classList.remove('locked');return}}catch(e){}
+  document.getElementById('gateForm').addEventListener('submit',function(ev){
+    ev.preventDefault();var inp=document.getElementById('gateInput');
+    if(inp.value.trim()===PASS){try{sessionStorage.setItem(KEY,'1')}catch(e){}document.body.classList.remove('locked');window.scrollTo(0,0)}
+    else{document.getElementById('gateErr').style.visibility='visible';inp.select()}
+  });
+  document.getElementById('gateInput').focus();
+})();
+</script>
+
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="nav-logo" href="#top" aria-label="KONA RESORT"><img src="images/logo-kona-resort-white.svg" alt="KONA RESORT"></a>
+    <a class="btn btn-line-light" href="#villas"><span class="jp">宿を選ぶ</span></a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- 1. ファーストビュー -->
+<section class="hero">
+  <img class="bg" src="images/hero-dusk.jpg" alt="淡路島西海岸、ヴィラのテラスから望む秋の夕暮れ">
+  <div class="wrap">
+    <p class="eyebrow">Autumn 2026 · Awaji Island</p>
+    <h1>秋は、サウナと夕日が<br>いちばん良い季節。</h1>
+    <p class="sub">昼はコスモスや紅葉、秋の味覚を巡り、<br>夕暮れは西海岸の一棟貸しヴィラへ。<br>KONA RESORT がご案内する、秋の淡路島 1泊2日。</p>
+    <div class="actions">
+      <a class="btn btn-gold" href="#villas"><span class="jp">空室を見る</span></a>
+      <a class="btn btn-line-light" href="#courses"><span class="jp">周遊コースを見る</span></a>
+    </div>
+    <p class="period" style="margin-top:22px">2026.9 — 11.30</p>
+  </div>
+  <p class="credit">KONA RESORT AWAJI KAI のテラスから</p>
+</section>
+
+<!-- 2. なぜ秋の淡路島か -->
+<section class="sec sec-ivory">
+  <div class="wrap">
+    <p class="eyebrow rise">Why autumn</p>
+    <h2 class="h2 rise">夏の混雑が去り、<br>島がいちばん過ごしやすくなる。</h2>
+    <div class="reasons">
+      <div class="reason rise">
+        <p class="num">01</p>
+        <h3>外気浴に、ちょうどいい気温</h3>
+        <p>汗が引かない夏とも、すぐに冷える冬とも違う秋。サウナのあと、テラスで海風に当たる時間がいちばん気持ちよく過ごせます。</p>
+      </div>
+      <div class="reason rise">
+        <p class="num">02</p>
+        <h3>夕日が早く、空が澄む</h3>
+        <p>日の入りが早まり、島巡りから戻ってすぐに夕焼けの時間。「日本の夕陽百選」の地が並ぶ西海岸で、空が色を変えていく様子を棟から眺められます。</p>
+      </div>
+      <div class="reason rise">
+        <p class="num">03</p>
+        <h3>島が、色づき、実る</h3>
+        <p>60万本のコスモス、色づく並木と寺社の紅葉、鱧や3年とらふぐ、みかん狩り。昼に出かける理由が、秋はいちばん多い季節です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. 秋の一日の過ごし方 -->
+<section class="sec sec-navy on-dark">
+  <div class="wrap day">
+    <figure class="day-photo rise">
+      <img src="images/kai-sauna.jpg" alt="ヴィラ内のプライベートサウナ">
+      <figcaption>全棟にプライベートサウナとジャグジーを備えています</figcaption>
+    </figure>
+    <div>
+      <p class="eyebrow rise">One autumn day</p>
+      <p class="concept rise">昼は、島へ。<br>夕暮れは、棟へ。</p>
+      <ol class="timeline">
+        <li class="rise"><p class="t">Daytime</p><h3>島を巡る</h3><p>コスモス畑、紅葉の並木、秋の味覚。車で回れる距離に見どころが集まっています。</p></li>
+        <li class="rise"><p class="t">Late afternoon</p><h3>早めにチェックインして、サウナへ</h3><p>夕日に間に合うように戻るのが、秋の淡路島を楽しむ一番のコツです。</p></li>
+        <li class="rise"><p class="t">Sunset</p><h3>外気浴をしながら、夕日を眺める</h3><p>ほかのお客様に気を遣うことはありません。海と空を、棟ごとひとり占め。</p></li>
+        <li class="rise"><p class="t">Night</p><h3>ジャグジーと、長い秋の夜</h3><p>日が暮れてからの時間が長いのも秋の贅沢。温まりながら星と波の音を。</p></li>
+        <li class="rise" style="padding-bottom:0"><p class="t">Next morning</p><h3>もう一か所、寄り道して帰る</h3><p>2日目は島の中部や南部へ。帰り道にも秋の見どころがあります。</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 4. 見どころカレンダー -->
+<section class="sec sec-white" id="calendar">
+  <div class="wrap">
+    <p class="eyebrow rise">Seasonal calendar</p>
+    <h2 class="h2 rise">いつ行くと、何に出会えるか。</h2>
+    <p class="lead rise">秋の見どころは、時期によって入れ替わります。ご予定の日付と照らし合わせてお選びください。</p>
+
+    <div class="cal-scroll rise">
+      <div class="cal" id="cal">
+        <!-- 期間：9/15（0）〜 11/30（76）。1日＝1/77 -->
+        <div class="cal-months">
+          <span style="left:0%">9月</span>
+          <span style="left:20.8%">10月</span>
+          <span style="left:61%">11月</span>
+        </div>
+        <div class="cal-body">
+          <div class="cal-hol-wrap">
+            <div class="cal-hol" style="left:32.5%;width:3.9%"><span>10/10–12</span></div>
+            <div class="cal-hol" style="left:59.7%;width:5.2%"><span>10/31–11/3</span></div>
+            <div class="cal-hol" style="left:87%;width:3.9%"><span>11/21–23</span></div>
+          </div>
+          <div class="cal-row"><div class="cal-label">栗拾い・芋掘り<small>例年の時期</small></div><div class="cal-track"><div class="bar" style="left:0%;width:61%" data-verify="2026年の受付期間"></div></div></div>
+          <div class="cal-row"><div class="cal-label">みかん狩り<small>例年の時期・農園により異なる</small></div><div class="cal-track"><div class="bar" style="left:6.5%;width:93.5%" data-verify="2026年の受付期間"></div></div></div>
+          <div class="cal-row"><div class="cal-label">明石海峡公園 秋のカーニバル<small>9/19〜11/15</small></div><div class="cal-track"><div class="bar b2" style="left:5.2%;width:75.3%"></div></div></div>
+          <div class="cal-row"><div class="cal-label">コスモス<small>あわじ花さじき・明石海峡公園</small></div><div class="cal-track"><div class="bar b2" style="left:33.8%;width:40.3%"></div></div></div>
+          <div class="cal-row"><div class="cal-label">淡路島公園 紅葉並木<small>モミジバフウ</small></div><div class="cal-track"><div class="bar b3" style="left:46.8%;width:40.3%"></div></div></div>
+          <div class="cal-row"><div class="cal-label">淡路島まつり花火大会<small>11/8（日）洲本・大浜公園</small></div><div class="cal-track"><div class="dot" style="left:70.8%" aria-label="11月8日"></div></div></div>
+          <div class="cal-row"><div class="cal-label">淡路島3年とらふぐ<small>11月から</small></div><div class="cal-track"><div class="bar b4" style="left:61%;width:39%"></div></div></div>
+          <div class="cal-row"><div class="cal-label">寺社の紅葉<small>東山寺・先山千光寺・岩上神社など</small></div><div class="cal-track"><div class="bar b3" style="left:87%;width:13%"></div></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="cal-legend"><span><i></i>連休</span><span>見頃は気候によって前後します。お出かけ前に各施設の最新情報をご確認ください。</span></div>
+  </div>
+</section>
+
+<!-- 5. 1泊2日の周遊コース -->
+<section class="sec sec-ivory" id="courses">
+  <div class="wrap">
+    <p class="eyebrow rise">1 night, 2 days</p>
+    <h2 class="h2 rise">秋の淡路島、1泊2日の巡り方。</h2>
+    <p class="lead rise">どのコースも「夕日の時間には棟に戻る」流れです。西海岸にある3つの宿なら、どれを選んでも同じように回れます。</p>
+
+    <div class="courses">
+      <article class="course rise">
+        <div class="course-head">
+          <p class="when">Course 01</p>
+          <h3 class="name">実りを摘んで、<br>夕日に帰る</h3>
+          <p class="period">9月下旬 〜 10月上旬</p>
+          <p class="for">家族・3世代でのご旅行に。体を動かす体験から始まる、にぎやかな秋。</p>
+        </div>
+        <div class="course-body">
+          <div class="dayblock">
+            <h4>Day 1</h4>
+            <ol>
+              <li>国営明石海峡公園<small>秋のカーニバル開催中（9/19〜11/15）</small></li>
+              <li>伊弉諾神宮<small>国生み神話ゆかりの神社。夫婦大楠へお参り</small></li>
+              <li class="stay">宿へ ― サウナと夕日<small>西海岸で日の入りを待つ</small></li>
+            </ol>
+          </div>
+          <div class="dayblock">
+            <h4>Day 2</h4>
+            <ol>
+              <li>栗拾い・芋掘り・みかん狩り<small>農園ごとに時期と予約方法が異なります</small></li>
+              <li>慶野松原<small>白砂と黒松が続く、夕陽百選の浜を散歩</small></li>
+            </ol>
+          </div>
+          <p class="foot">※ 味覚狩りは各農園の受付状況をご確認のうえお出かけください。</p>
+        </div>
+      </article>
+
+      <article class="course rise">
+        <div class="course-head">
+          <p class="when">Course 02</p>
+          <h3 class="name">コスモスの丘と、<br>海に沈む夕日</h3>
+          <p class="period">10月中旬 〜 11月上旬</p>
+          <p class="for">ご夫婦・カップルに。島の北側に見どころが集まり、移動が少ない一日。</p>
+        </div>
+        <div class="course-body">
+          <div class="dayblock">
+            <h4>Day 1</h4>
+            <ol>
+              <li>あわじ花さじき<small>約60万本のコスモスと、丘の上から望む海</small></li>
+              <li>兵庫県立淡路島公園<small>色づき始めたモミジバフウの並木道</small></li>
+              <li class="stay">宿へ ― サウナと夕日<small>秋は日の入りが早いので、早めの戻りを</small></li>
+            </ol>
+          </div>
+          <div class="dayblock">
+            <h4>Day 2</h4>
+            <ol>
+              <li>国営明石海峡公園<small>コスモス（見頃 10月中旬〜11月上旬）</small></li>
+              <li>淡路夢舞台で昼食・散策</li>
+            </ol>
+          </div>
+          <p class="foot">※ 11/7（土）ご宿泊なら、翌11/8（日）18時から洲本の「淡路島まつり花火大会」も。</p>
+        </div>
+      </article>
+
+      <article class="course rise">
+        <div class="course-head">
+          <p class="when">Course 03</p>
+          <h3 class="name">紅葉の寺社と、<br>3年とらふぐ</h3>
+          <p class="period">11月中旬 〜 11月下旬</p>
+          <p class="for">大人のおふたりや、食を楽しみたいグループに。静かな晩秋の島を味わう。</p>
+        </div>
+        <div class="course-body">
+          <div class="dayblock">
+            <h4>Day 1</h4>
+            <ol>
+              <li>岩上神社・東山寺<small>イチョウとモミジの参道（見頃 11月下旬ごろ）</small></li>
+              <li class="stay">宿へ ― サウナと夕日<small>澄んだ晩秋の空と、長い夜</small></li>
+            </ol>
+          </div>
+          <div class="dayblock">
+            <h4>Day 2</h4>
+            <ol>
+              <li>洲本城跡（三熊山）<small>紅葉と、大阪湾を見渡す天守台</small></li>
+              <li>先山千光寺<small>島の中央にそびえる先山の山頂の寺</small></li>
+              <li>淡路島3年とらふぐの昼食<small>11月から。島内の取扱店で</small></li>
+            </ol>
+          </div>
+          <p class="foot">※ とらふぐは宿でのご提供ではありません。島内の取扱店をご予約ください。</p>
+        </div>
+      </article>
+
+      <article class="course rise">
+        <div class="course-head">
+          <p class="when">Course for dogs</p>
+          <h3 class="name">愛犬と歩く、<br>涼しい秋の島</h3>
+          <p class="period">9月下旬 〜 11月下旬</p>
+          <p class="for">犬連れのご旅行に。暑さが和らぐ秋は、屋外を思いきり楽しめる季節です。</p>
+        </div>
+        <div class="course-body">
+          <div class="dayblock">
+            <h4>Day 1</h4>
+            <ol>
+              <li>あわじ花さじき<small>リード着用で大型犬も入園できます</small></li>
+              <li>伊弉諾神宮<small>屋外はリード・抱っこで参拝できます</small></li>
+              <li class="stay">Dog Villa Holoholo へ<small>広い芝生と焚き火、夕焼けの海</small></li>
+            </ol>
+          </div>
+          <div class="dayblock">
+            <h4>Day 2</h4>
+            <ol>
+              <li>洲本城跡<small>リード着用で散策できます（石段あり）</small></li>
+              <li>慶野松原<small>松林と砂浜をお散歩</small></li>
+            </ol>
+          </div>
+          <p class="foot">※ 犬の同伴条件は各施設で変わることがあります。お出かけ前にご確認ください。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 6. 秋の味覚 -->
+<section class="sec sec-white">
+  <div class="wrap">
+    <p class="eyebrow rise">Autumn tastes</p>
+    <h2 class="h2 rise">島で味わう、秋。</h2>
+    <p class="lead rise">昼食や寄り道で楽しめる、淡路島の秋の味覚です。（宿でのご提供ではありません）</p>
+    <div class="tastes rise">
+      <div class="taste"><p class="when">OCT — NOV</p><h3>秋の鱧・紅葉鯛</h3><p>夏の名物・鱧は、秋に脂がのった「名残鱧」に。島内の料理店の秋の献立で。</p></div>
+      <div class="taste"><p class="when">FROM NOV</p><h3>淡路島3年とらふぐ</h3><p>3年かけて大きく育てる淡路島の名物。11月から島内の取扱店で味わえます。</p></div>
+      <div class="taste"><p class="when">SEP — NOV</p><h3>みかん狩り</h3><p>島の農園で、摘みたてをその場で。お子さま連れの2日目の予定にも。</p></div>
+      <div class="taste"><p class="when">UNTIL NOV</p><h3>生しらす</h3><p>春から11月末ごろまで。港町ならではの、鮮度がいのちの味。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. 宿を選ぶ -->
+<section class="sec sec-navy on-dark" id="villas">
+  <div class="wrap">
+    <p class="eyebrow rise">Choose your villa</p>
+    <h2 class="h2 rise">秋の拠点は、淡路島西海岸の一棟貸し。</h2>
+    <p class="lead rise">3つの宿は、どれも夕日の沈む西海岸に建っています。ご一緒する方に合わせてお選びください。</p>
+    <div class="villas">
+      <article class="villa rise">
+        <img src="images/kai-night-pool.jpg" alt="KONA RESORT AWAJI KAI のプールヴィラ、夕暮れのテラス">
+        <p class="brand">KONA RESORT<br>AWAJI KAI</p>
+        <p class="jp">プールヴィラ3棟＋On the WATER｜淡路市江井</p>
+        <p class="fit">ご夫婦・記念日の旅に。<br>プールと夕暮れの上質な時間。</p>
+        <dl>
+          <dt>設備</dt><dd>プール・サウナ・ジャグジー・オーシャンビュー</dd>
+          <dt>犬連れ</dt><dd>一部の棟・フロアのみ可</dd>
+        </dl>
+        <a class="btn btn-line-light" href="https://kona-resort.jp/" target="_blank" rel="noopener" data-verify="予約ページURL"><span class="jp">空室・料金を見る</span></a>
+      </article>
+      <article class="villa rise">
+        <img src="images/koc-sunset-jacuzzi.jpg" alt="KONA OCEAN CLUB の屋上ジャグジーと海">
+        <p class="brand light">KONA OCEAN CLUB</p>
+        <p class="jp">BEACH・SUNSET・COVE・OCEAN の4棟｜淡路市深草</p>
+        <p class="fit">カップルから8名のグループまで。<br>4タイプから人数で選べる。</p>
+        <dl>
+          <dt>定員</dt><dd>SUNSET・COVE 4名／BEACH 6名／OCEAN 8名</dd>
+          <dt>設備</dt><dd>全棟 サウナ・ジャグジー・オーシャンビューテラス</dd>
+          <dt>犬連れ</dt><dd>BEACH・SUNSET で可</dd>
+        </dl>
+        <a class="btn btn-line-light" href="https://kona-oc.jp/" target="_blank" rel="noopener" data-verify="予約ページURL"><span class="jp">空室・料金を見る</span></a>
+      </article>
+      <article class="villa rise">
+        <img src="images/holo-dogs-sunset.jpg" alt="Dog Villa Holoholo の芝生で夕日を浴びる犬たち">
+        <p class="brand" style="text-transform:none">Dog Villa Holoholo</p>
+        <p class="jp">犬連れ専用の一棟貸し｜淡路市尾崎</p>
+        <p class="fit">愛犬と一緒に。<br>広い芝生と焚き火で過ごす秋の夜。</p>
+        <dl>
+          <dt>定員</dt><dd>5名・1日1組限定</dd>
+          <dt>犬連れ</dt><dd>頭数制限なし・ペット料金無料</dd>
+        </dl>
+        <a class="btn btn-line-light" href="https://awaji-holoholo.jp/" target="_blank" rel="noopener" data-verify="予約ページURL"><span class="jp">空室・料金を見る</span></a>
+      </article>
+    </div>
+    <p class="note rise">料金・空室状況・キャンセル規定は、各宿の予約ページでご確認ください。</p>
+  </div>
+</section>
+
+<!-- 8. よくある質問 -->
+<section class="sec sec-ivory">
+  <div class="wrap">
+    <p class="eyebrow">FAQ</p>
+    <h2 class="h2">よくあるご質問</h2>
+    <div class="faq">
+      <details>
+        <summary>宿から紅葉やコスモスは見えますか？</summary>
+        <div class="a">宿からは海と夕日をご覧いただけます。コスモスや紅葉は島内の各名所の見どころで、宿から車でお出かけいただく形になります。</div>
+      </details>
+      <details>
+        <summary>見どころへは、どうやって移動しますか？</summary>
+        <div class="a">お車での移動がおすすめです。ご紹介している見どころは、どれも車で回れる距離にあります。所要時間は道路状況によって変わりますので、地図アプリでご確認ください。</div>
+      </details>
+      <details>
+        <summary>夕日に間に合うには、何時ごろ宿に戻ればよいですか？</summary>
+        <div class="a">秋は日の入りが早くなり、11月には17時前後になります。サウナで温まってから夕日を迎えるなら、日の入りの1時間ほど前にはご到着いただくのがおすすめです。</div>
+      </details>
+      <details>
+        <summary>犬と一緒に泊まれますか？</summary>
+        <div class="a">Dog Villa Holoholo は犬連れ専用の宿で、頭数制限なし・ペット料金無料です。KONA OCEAN CLUB は BEACH・SUNSET、KONA RESORT AWAJI KAI は一部の棟・フロアで同伴いただけます。</div>
+      </details>
+      <details>
+        <summary>雨の日はどう過ごせばよいですか？</summary>
+        <div class="a">全棟にプライベートサウナを備えていますので、雨の日は無理に出かけず、棟でゆっくりお過ごしいただくのもおすすめです。</div>
+      </details>
+      <details>
+        <summary>食事はついていますか？</summary>
+        <div class="a">お食事の有無やプランは宿ごとに異なります。各宿の予約ページでご確認ください。秋の味覚は島内の飲食店でもお楽しみいただけます。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 9. 締め -->
+<section class="final">
+  <img src="images/dusk-terrace.jpg" alt="">
+  <div class="wrap">
+    <p class="concept">この秋は、夕日の時間に<br>帰る場所を決めておく。</p>
+    <p style="margin-top:18px;font-size:15px">2026年11月30日まで。連休から埋まっていきます。</p>
+    <div class="actions">
+      <a class="btn btn-line-light" href="#villas"><span class="jp">宿を選んで空室を見る</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <img src="images/logo-kona-resort-white.svg" alt="KONA RESORT">
+      <p style="margin-top:16px">運営：株式会社SUGOMoRI</p>
+    </div>
+    <ul>
+      <li><a href="https://kona-resort.jp/" target="_blank" rel="noopener">KONA RESORT AWAJI KAI</a></li>
+      <li><a href="https://kona-oc.jp/" target="_blank" rel="noopener">KONA OCEAN CLUB</a></li>
+      <li><a href="https://awaji-holoholo.jp/" target="_blank" rel="noopener">Dog Villa Holoholo</a></li>
+    </ul>
+    <p class="copy">見どころ・催しの時期は2026年9月時点の情報と例年の傾向に基づきます。変更される場合があります。<br>© KONA RESORT</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  function onScroll(){nav.classList.toggle('scrolled',window.scrollY>window.innerHeight*0.6)}
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  var els=document.querySelectorAll('.rise');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){io.observe(e)});
+  // 保険：3秒後に未表示のものを出す
+  setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},3000);
+})();
+</script>
+</body>
+</html>
