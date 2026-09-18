@@ -202,43 +202,9 @@ footer .copy{width:100%;font-size:11px;margin-top:20px}
   .final .actions .btn{width:100%}
 }
 
-/* パスワード画面（クライアント側の簡易ゲート） */
-body.locked > :not(#gate){display:none!important}
-#gate{display:none}
-body.locked #gate{display:flex;position:fixed;inset:0;z-index:100;background:var(--navy);align-items:center;justify-content:center;padding:24px}
-.gate-box{width:100%;max-width:360px;text-align:center;color:var(--on-dark)}
-.gate-box img{height:40px;width:auto;margin:0 auto 28px}
-.gate-box p{font-size:14px;color:var(--on-dark-soft)}
-.gate-box input{width:100%;margin-top:20px;padding:14px 18px;border-radius:9999px;border:1px solid var(--line-dark);background:rgba(255,255,255,.08);color:#fff;font-size:18px;text-align:center;letter-spacing:.3em;outline:none}
-.gate-box input:focus{border-color:var(--aqua)}
-.gate-box button{margin-top:14px;width:100%;cursor:pointer;border:0}
-.gate-err{margin-top:12px;font-size:13px;color:var(--gold-lt)!important;visibility:hidden}
 </style>
 </head>
-<body class="locked">
-<div id="gate">
-  <form class="gate-box" id="gateForm" autocomplete="off">
-    <img src="images/logo-kona-resort-white.svg" alt="KONA RESORT">
-    <p>このページの閲覧にはパスワードが必要です</p>
-    <input type="password" id="gateInput" inputmode="numeric" autocomplete="new-password" placeholder="パスワード" aria-label="パスワード">
-    <button type="submit" class="btn btn-line-light"><span class="jp">表示する</span></button>
-    <p class="gate-err" id="gateErr">パスワードが違います</p>
-  </form>
-</div>
-<script>
-(function(){
-  var KEY='kona_autumn2026_unlocked';
-  var PASS='5757';
-
-  try{if(sessionStorage.getItem(KEY)==='1'){document.body.classList.remove('locked');return}}catch(e){}
-  document.getElementById('gateForm').addEventListener('submit',function(ev){
-    ev.preventDefault();var inp=document.getElementById('gateInput');
-    if(inp.value.trim()===PASS){try{sessionStorage.setItem(KEY,'1')}catch(e){}document.body.classList.remove('locked');window.scrollTo(0,0)}
-    else{document.getElementById('gateErr').style.visibility='visible';inp.select()}
-  });
-  document.getElementById('gateInput').focus();
-})();
-</script>
+<body>
 
 
 <header class="nav" id="nav">
