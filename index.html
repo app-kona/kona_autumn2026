@@ -41,6 +41,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '1346218130921709');
   fbq('track', 'PageView');
+  fbq('track', 'ViewContent', {
+    content_name: 'autumn_2026_lp',
+    content_category: 'seasonal_landing_page'
+  });
 </script>
 <!-- End Meta Pixel Code -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -256,7 +260,7 @@ src="https://www.facebook.com/tr?id=1346218130921709&ev=PageView&noscript=1"
 <header class="nav" id="nav">
   <div class="wrap">
     <a class="nav-logo" href="#top" aria-label="KONA RESORT"><img src="images/logo-kona-resort-white.svg" alt="KONA RESORT"></a>
-    <a class="btn btn-line-light" href="#villas"><span class="jp">宿を選ぶ</span></a>
+    <a class="btn btn-line-light" href="#villas" data-track="internal_cta" data-track-id="header_choose_villa" data-placement="header"><span class="jp">宿を選ぶ</span></a>
   </div>
 </header>
 
@@ -270,8 +274,8 @@ src="https://www.facebook.com/tr?id=1346218130921709&ev=PageView&noscript=1"
     <h1>秋は、サウナと夕日が<br>いちばん良い季節。</h1>
     <p class="sub">昼はコスモスや紅葉、秋の味覚を巡り、<br>夕暮れは西海岸の一棟貸しヴィラへ。<br>KONA RESORT がご案内する、秋の淡路島 1泊2日。</p>
     <div class="actions">
-      <a class="btn btn-gold" href="#villas"><span class="jp">空室を見る</span></a>
-      <a class="btn btn-line-light" href="#courses"><span class="jp">周遊コースを見る</span></a>
+      <a class="btn btn-gold" href="#villas" data-track="internal_cta" data-track-id="hero_view_villas" data-placement="hero"><span class="jp">空室を見る</span></a>
+      <a class="btn btn-line-light" href="#courses" data-track="internal_cta" data-track-id="hero_view_courses" data-placement="hero"><span class="jp">周遊コースを見る</span></a>
     </div>
     <p class="period" style="margin-top:22px">2026.9 — 11.30</p>
   </div>
@@ -510,7 +514,7 @@ src="https://www.facebook.com/tr?id=1346218130921709&ev=PageView&noscript=1"
           <dt>設備</dt><dd>プール・サウナ・ジャグジー・オーシャンビュー</dd>
           <dt>犬連れ</dt><dd>一部の棟・フロアのみ可</dd>
         </dl>
-        <a class="btn btn-line-light" href="https://kona-resort.jp/" target="_blank" rel="noopener" data-verify="予約ページURL"><span class="jp">空室・料金を見る</span></a>
+        <a class="btn btn-line-light" href="https://kona-resort.jp/" target="_blank" rel="noopener" data-verify="予約ページURL" data-track="booking_cta" data-brand="kona_resort_awaji_kai" data-placement="villa_card"><span class="jp">空室・料金を見る</span></a>
       </article>
       <article class="villa rise">
         <img src="images/koc-sunset-jacuzzi.jpg" alt="KONA OCEAN CLUB の屋上ジャグジーと海">
@@ -522,7 +526,7 @@ src="https://www.facebook.com/tr?id=1346218130921709&ev=PageView&noscript=1"
           <dt>設備</dt><dd>全棟 サウナ・ジャグジー・オーシャンビューテラス</dd>
           <dt>犬連れ</dt><dd>BEACH・SUNSET で可</dd>
         </dl>
-        <a class="btn btn-line-light" href="https://kona-oc.jp/" target="_blank" rel="noopener" data-verify="予約ページURL"><span class="jp">空室・料金を見る</span></a>
+        <a class="btn btn-line-light" href="https://kona-oc.jp/" target="_blank" rel="noopener" data-verify="予約ページURL" data-track="booking_cta" data-brand="kona_ocean_club" data-placement="villa_card"><span class="jp">空室・料金を見る</span></a>
       </article>
       <article class="villa rise">
         <img src="images/holo-dogs-sunset.jpg" alt="Dog Villa Holoholo の芝生で夕日を浴びる犬たち">
@@ -533,7 +537,7 @@ src="https://www.facebook.com/tr?id=1346218130921709&ev=PageView&noscript=1"
           <dt>定員</dt><dd>5名・1日1組限定</dd>
           <dt>犬連れ</dt><dd>頭数制限なし・ペット料金無料</dd>
         </dl>
-        <a class="btn btn-line-light" href="https://awaji-holoholo.jp/" target="_blank" rel="noopener" data-verify="予約ページURL"><span class="jp">空室・料金を見る</span></a>
+        <a class="btn btn-line-light" href="https://awaji-holoholo.jp/" target="_blank" rel="noopener" data-verify="予約ページURL" data-track="booking_cta" data-brand="dog_villa_holoholo" data-placement="villa_card"><span class="jp">空室・料金を見る</span></a>
       </article>
     </div>
     <p class="note rise">料金・空室状況・キャンセル規定は、各宿の予約ページでご確認ください。</p>
@@ -546,27 +550,27 @@ src="https://www.facebook.com/tr?id=1346218130921709&ev=PageView&noscript=1"
     <p class="eyebrow">FAQ</p>
     <h2 class="h2">よくあるご質問</h2>
     <div class="faq">
-      <details>
+      <details data-faq-id="facility_view">
         <summary>宿から紅葉やコスモスは見えますか？</summary>
         <div class="a">宿からは海と夕日をご覧いただけます。コスモスや紅葉は島内の各名所の見どころで、宿から車でお出かけいただく形になります。</div>
       </details>
-      <details>
+      <details data-faq-id="transport">
         <summary>見どころへは、どうやって移動しますか？</summary>
         <div class="a">お車での移動がおすすめです。ご紹介している見どころは、どれも車で回れる距離にあります。所要時間は道路状況によって変わりますので、地図アプリでご確認ください。</div>
       </details>
-      <details>
+      <details data-faq-id="sunset_timing">
         <summary>夕日に間に合うには、何時ごろ宿に戻ればよいですか？</summary>
         <div class="a">秋は日の入りが早くなり、11月には17時前後になります。サウナで温まってから夕日を迎えるなら、日の入りの1時間ほど前にはご到着いただくのがおすすめです。</div>
       </details>
-      <details>
+      <details data-faq-id="dog_policy">
         <summary>犬と一緒に泊まれますか？</summary>
         <div class="a">Dog Villa Holoholo は犬連れ専用の宿で、頭数制限なし・ペット料金無料です。KONA OCEAN CLUB は BEACH・SUNSET、KONA RESORT AWAJI KAI は一部の棟・フロアで同伴いただけます。</div>
       </details>
-      <details>
+      <details data-faq-id="rainy_day">
         <summary>雨の日はどう過ごせばよいですか？</summary>
         <div class="a">全棟にプライベートサウナを備えていますので、雨の日は無理に出かけず、棟でゆっくりお過ごしいただくのもおすすめです。</div>
       </details>
-      <details>
+      <details data-faq-id="meals">
         <summary>食事はついていますか？</summary>
         <div class="a">お食事の有無やプランは宿ごとに異なります。各宿の予約ページでご確認ください。秋の味覚は島内の飲食店でもお楽しみいただけます。</div>
       </details>
@@ -581,7 +585,7 @@ src="https://www.facebook.com/tr?id=1346218130921709&ev=PageView&noscript=1"
     <p class="concept">この秋は、夕日の時間に<br>帰る場所を決めておく。</p>
     <p style="margin-top:18px;font-size:15px">2026年11月30日まで。連休から埋まっていきます。</p>
     <div class="actions">
-      <a class="btn btn-line-light" href="#villas"><span class="jp">宿を選んで空室を見る</span></a>
+      <a class="btn btn-line-light" href="#villas" data-track="internal_cta" data-track-id="final_view_villas" data-placement="final"><span class="jp">宿を選んで空室を見る</span></a>
     </div>
   </div>
 </section>
@@ -595,9 +599,9 @@ src="https://www.facebook.com/tr?id=1346218130921709&ev=PageView&noscript=1"
       <p style="margin-top:16px">運営：株式会社SUGOMoRI</p>
     </div>
     <ul>
-      <li><a href="https://kona-resort.jp/" target="_blank" rel="noopener">KONA RESORT AWAJI KAI</a></li>
-      <li><a href="https://kona-oc.jp/" target="_blank" rel="noopener">KONA OCEAN CLUB</a></li>
-      <li><a href="https://awaji-holoholo.jp/" target="_blank" rel="noopener">Dog Villa Holoholo</a></li>
+      <li><a href="https://kona-resort.jp/" target="_blank" rel="noopener" data-track="brand_site_link" data-brand="kona_resort_awaji_kai" data-placement="footer">KONA RESORT AWAJI KAI</a></li>
+      <li><a href="https://kona-oc.jp/" target="_blank" rel="noopener" data-track="brand_site_link" data-brand="kona_ocean_club" data-placement="footer">KONA OCEAN CLUB</a></li>
+      <li><a href="https://awaji-holoholo.jp/" target="_blank" rel="noopener" data-track="brand_site_link" data-brand="dog_villa_holoholo" data-placement="footer">Dog Villa Holoholo</a></li>
     </ul>
     <p class="copy">見どころ・催しの時期は2026年9月時点の情報と例年の傾向に基づきます。変更される場合があります。<br>© KONA RESORT</p>
   </div>
@@ -605,6 +609,61 @@ src="https://www.facebook.com/tr?id=1346218130921709&ev=PageView&noscript=1"
 
 <script>
 (function(){
+  function sendGaEvent(name, parameters){
+    if(typeof window.gtag==='function'){window.gtag('event',name,parameters)}
+  }
+  function sendMetaEvent(name, parameters){
+    if(typeof window.fbq==='function'){window.fbq('trackCustom',name,parameters)}
+  }
+  function sendClarityEvent(name){
+    if(typeof window.clarity==='function'){window.clarity('event',name)}
+  }
+
+  document.addEventListener('click',function(event){
+    var target=event.target.closest('[data-track]');
+    if(!target){return}
+    var trackType=target.dataset.track;
+    var placement=target.dataset.placement;
+    if(trackType==='internal_cta'){
+      sendGaEvent('select_content',{content_type:'internal_cta',item_id:target.dataset.trackId,placement:placement});
+      sendClarityEvent('InternalCtaClick');
+    }
+    if(trackType==='booking_cta'){
+      var brand=target.dataset.brand;
+      sendGaEvent('booking_cta_click',{brand:brand,placement:placement});
+      sendMetaEvent('BookingCtaClick',{content_name:brand,content_category:'villa',placement:placement});
+      sendClarityEvent('BookingCtaClick');
+    }
+    if(trackType==='brand_site_link'){
+      sendGaEvent('brand_site_link_click',{brand:target.dataset.brand,placement:placement});
+      sendClarityEvent('BrandSiteLinkClick');
+    }
+  });
+
+  document.querySelectorAll('.faq details').forEach(function(detail){
+    detail.addEventListener('toggle',function(){
+      if(!detail.open){return}
+      sendGaEvent('faq_open',{faq_id:detail.dataset.faqId});
+      sendClarityEvent('FaqOpen');
+    });
+  });
+
+  var scrollMilestones=[25,50,75,90];
+  var trackedScrollMilestones={};
+  function trackScrollDepth(){
+    var maxScroll=document.documentElement.scrollHeight-window.innerHeight;
+    if(maxScroll<=0){return}
+    var scrollPercent=Math.floor((window.scrollY/maxScroll)*100);
+    scrollMilestones.forEach(function(milestone){
+      if(scrollPercent>=milestone&&!trackedScrollMilestones[milestone]){
+        trackedScrollMilestones[milestone]=true;
+        sendGaEvent('scroll_depth',{percent_scrolled:milestone});
+      }
+    });
+  }
+  window.addEventListener('scroll',trackScrollDepth,{passive:true});
+  trackScrollDepth();
+
   var nav=document.getElementById('nav');
   function onScroll(){nav.classList.toggle('scrolled',window.scrollY>window.innerHeight*0.6)}
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
