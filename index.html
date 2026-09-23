@@ -571,7 +571,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 (function(){
   function sendGaEvent(name, parameters){
-    if(typeof window.gtag==='function'){window.gtag('event',name,parameters)}
+    window.dataLayer=window.dataLayer||[];
+    window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};
+    window.gtag('event',name,parameters);
   }
   function sendMetaEvent(name, parameters){
     if(typeof window.fbq==='function'){window.fbq('trackCustom',name,parameters)}
